@@ -1,0 +1,16 @@
+CREATE TABLE amazon_store (id INTEGER PRIMARY KEY, items TEXT, condition TEXT, quantity INTEGER, sale_price INTEGER);
+
+INSERT INTO amazon_store VALUES (1, "Gown", "New", 4, 200);
+INSERT INTO amazon_store VALUES (2, "Men_coat", "New", 1, 250);
+INSERT INTO amazon_store VALUES (3, "Used_blouse", "Used", 2, 20);
+INSERT INTO amazon_store VALUES (4, "Shoes", "New", 1, 30);
+INSERT INTO amazon_store VALUES (5, "Books", "Used", 5, 10);
+INSERT INTO amazon_store VALUES (6, "Toys", "Used", 5, 5);
+INSERT INTO amazon_store VALUES (7, "Phone_holder", "New", 4, 200);
+INSERT INTO amazon_store VALUES (8, "Jeans", "New", 1, 250);
+INSERT INTO amazon_store VALUES (9, "Candles", "Used", 2, 20);
+INSERT INTO amazon_store VALUES (10, "Tablecloth", "New", 1, 30);
+INSERT INTO amazon_store VALUES (11, "Book_holder", "Used", 5, 10);
+INSERT INTO amazon_store VALUES (12, "Brush_spinner", "Used", 5, 5);
+SELECT * FROM amazon_store WHERE items > 2 ORDER BY condition;
+SELECT SUM(quantity) FROM amazon_store;
